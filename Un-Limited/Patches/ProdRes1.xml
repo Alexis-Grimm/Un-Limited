@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <!--Core-->
+        <!--StatsDef-->
+            <Operation Class="ModCheck.Sequence">
+                <patchName>StatDef</patchName>
+                <success>Always</success>
+                <operations>
+                    <!--TameAnimalChance-->
+                        <li Class="ModCheck.Sequence">
+                            <patchName>TameAnimalChance</patchName>
+                            <operations>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="TameAnimalChance"]/capacityFactors/li[1]/max</xpath>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="TameAnimalChance"]/capacityFactors/li[2]/max</xpath>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="TameAnimalChance"]/capacityFactors/li[3]/max</xpath>
+                                </li>
+                            </operations>
+                        </li>
+                    <!--TrainAnimalChance-->
+                        <li Class="ModCheck.Sequence">
+                            <patchName>TrainAnimalChance</patchName>
+                            <operations>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="TrainAnimalChance"]/capacityFactors/li[1]/max</xpath>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="TrainAnimalChance"]/capacityFactors/li[2]/max</xpath>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="TrainAnimalChance"]/capacityFactors/li[3]/max</xpath>
+                                </li>
+                            </operations>
+                        </li>
+                    <!--MiningSpeed-->
+                        <li Class="ModCheck.Sequence">
+                            <patchName>MiningSpeed</patchName>
+                            <operations>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="MiningSpeed"]/capacityFactors/li[2]/max</xpath>
+                                </li>
+                            </operations>
+                        </li>
+                    <!--MiningYield-->
+                        <li Class="ModCheck.Sequence">
+                            <patchName>MiningYield</patchName>
+                            <operations>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="MiningYield"]/capacityFactors/li[1]/max</xpath>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="MiningYield"]/capacityFactors/li[2]/max</xpath>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="MiningYield"]/maxValue</xpath>
+                                </li>
+                            </operations>
+                        </li>
+                    <!--SmoothingSpeed-->
+                        <li Class="ModCheck.Sequence">
+                            <patchName>SmoothingSpeed</patchName>
+                            <operations>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="SmoothingSpeed"]/capacityFactors/li[2]/max</xpath>
+                                </li>
+                            </operations>
+                        </li>
+                    <!--ResearchSpeed-->
+                        <li Class="ModCheck.Sequence">
+                            <patchName>ResearchSpeed</patchName>
+                            <operations>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="ResearchSpeed"]/capacityFactors/li[1]/max</xpath>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="ResearchSpeed"]/capacityFactors/li[2]/max</xpath>
+                                </li>
+                            </operations>
+                        </li>
+                    <!--AnimalGatherSpeed-->
+                        <li Class="ModCheck.Sequence">
+                            <patchName>AnimalGatherSpeed</patchName>
+                            <operations>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="AnimalGatherSpeed"]/capacityFactors/li[2]/max</xpath>
+                                </li>
+                            </operations>
+                        </li>
+                    <!--AnimalGatherYield-->
+                        <li Class="ModCheck.Sequence">
+                            <patchName>AnimalGatherYield</patchName>
+                            <operations>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="AnimalGatherYield"]/capacityFactors/li[2]/max</xpath>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="AnimalGatherYield"]/maxValue</xpath>
+                                </li>
+                            </operations>
+                        </li>
+                    <!--PlantWorkSpeed-->
+                        <li Class="ModCheck.Sequence">
+                            <patchName>PlantWorkSpeed</patchName>
+                            <operations>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="PlantWorkSpeed"]/capacityFactors/li[2]/max</xpath>
+                                </li>
+                            </operations>
+                        </li>
+                    <!--PlantHarvestYield-->
+                        <li Class="ModCheck.Sequence">
+                            <patchName>PlantHarvestYield</patchName>
+                            <operations>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="PlantHarvestYield"]/capacityFactors/li[2]/max</xpath>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="PlantHarvestYield"]/maxValue</xpath>
+                                </li>
+                            </operations>
+                        </li>
+                    <!--ConstructionSpeed-->
+                        <li Class="ModCheck.Sequence">
+                            <patchName>ConstructionSpeed</patchName>
+                            <operations>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="ConstructionSpeed"]/capacityFactors/li[2]/max</xpath>
+                                </li>
+                            </operations>
+                        </li>
+                    <!--ConstructSuccessChance-->
+                        <li Class="ModCheck.Sequence">
+                            <patchName>ConstructSuccessChance</patchName>
+                            <operations>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="ConstructSuccessChance"]/capacityFactors/li[2]/max</xpath>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="ConstructSuccessChance"]/maxValue</xpath>
+                                </li>
+                            </operations>
+                        </li>
+                    <!--MedicalTendSpeed-->
+                        <li Class="ModCheck.Sequence">
+                            <patchName>MedicalTendSpeed</patchName>
+                            <operations>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="MedicalTendSpeed"]/capacityFactors/li[1]/max</xpath>
+                                </li>
+                            </operations>
+                        </li>
+                    <!--MedicalTendQuality-->
+                        <li Class="ModCheck.Sequence">
+                            <patchName>MedicalTendQuality</patchName>
+                            <operations>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="MedicalTendQuality"]/capacityFactors/li[1]/max</xpath>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="MedicalTendQuality"]/capacityFactors/li[2]/max</xpath>
+                                </li>
+                            </operations>
+                        </li>
+                    <!--MedicalOperationSpeed-->
+                        <li Class="ModCheck.Sequence">
+                            <patchName>MedicalOperationSpeed</patchName>
+                            <operations>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="MedicalOperationSpeed"]/capacityFactors/li[1]/max</xpath>
+                                </li>
+                            </operations>
+                        </li>
+                    <!--MedicalSurgerySuccessChance-->
+                        <li Class="ModCheck.Sequence">
+                            <patchName>MedicalSurgerySuccessChance</patchName>
+                            <operations>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="MedicalSurgerySuccessChance"]/capacityFactors/li[1]/max</xpath>
+                                </li>
+                            </operations>
+                        </li>
+                    <!--UnskilledLaborSpeed-->
+                        <li Class="ModCheck.Sequence">
+                            <patchName>UnskilledLaborSpeed</patchName>
+                            <operations>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="UnskilledLaborSpeed"]/capacityFactors/li[2]/max</xpath>
+                                </li>
+                            </operations>
+                        </li>
+                    <!--SculptingSpeed-->
+                        <li Class="ModCheck.Sequence">
+                            <patchName>SculptingSpeed</patchName>
+                            <operations>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="SculptingSpeed"]/capacityFactors/li[2]/max</xpath>
+                                </li>
+                            </operations>
+                        </li>
+                    <!--TailoringSpeed-->
+                        <li Class="ModCheck.Sequence">
+                            <patchName>TailoringSpeed</patchName>
+                            <operations>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="TailoringSpeed"]/capacityFactors/li[1]/max</xpath>
+                                </li>
+                            </operations>
+                        </li>
+                    <!--SmithingSpeed-->
+                        <li Class="ModCheck.Sequence">
+                            <patchName>SmithingSpeed</patchName>
+                            <operations>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="SmithingSpeed"]/capacityFactors/li[1]/max</xpath>
+                                </li>
+                            </operations>
+                        </li>
+                    <!--DrugSynthesisSpeed-->
+                        <li Class="ModCheck.Sequence">
+                            <patchName>DrugSynthesisSpeed</patchName>
+                            <operations>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="DrugSynthesisSpeed"]/capacityFactors/li[1]/max</xpath>
+                                </li>
+                            </operations>
+                        </li>
+                    <!--CookSpeed-->
+                        <li Class="ModCheck.Sequence">
+                            <patchName>CookSpeed</patchName>
+                            <operations>
+                                 <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="CookSpeed"]/capacityFactors/li[1]/max</xpath>
+                                </li>
+                            </operations>
+                        </li>
+                    <!--DrugCookingSpeed-->
+                        <li Class="ModCheck.Sequence">
+                            <patchName>DrugCookingSpeed</patchName>
+                            <operations>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="DrugCookingSpeed"]/capacityFactors/li[1]/max</xpath>
+                                </li>
+                            </operations>
+                        </li>
+                    <!--ButcherySpeedBase-->
+                        <li Class="ModCheck.Sequence">
+                            <patchName>ButcherySpeedBase</patchName>
+                            <operations>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[@Name="ButcherySpeedBase"]/capacityFactors/li[1]/max</xpath>
+                                </li>
+                            </operations>
+                        </li>
+                    <!--ButcheryEfficiencyBase-->
+                        <li Class="ModCheck.Sequence">
+                            <patchName>ButcheryEfficiencyBase</patchName>
+                            <operations>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[@Name="ButcheryEfficiencyBase"]/capacityFactors/li[1]/max</xpath>
+                                </li>
+                            </operations>
+                        </li>
+                    <!--ButcheryFleshEfficiency-->
+                        <li Class="ModCheck.Sequence">
+                            <patchName>ButcheryFleshEfficiency</patchName>
+                            <operations>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="ButcheryFleshEfficiency"]/maxValue</xpath>
+                                </li>
+                            </operations>
+                        </li>
+                    <!--ButcheryMechanoidEfficiency-->
+                        <li Class="ModCheck.Sequence">
+                            <patchName>ButcheryMechanoidEfficiency</patchName>
+                            <operations>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="ButcheryMechanoidEfficiency"]/maxValue</xpath>
+                                </li>
+                            </operations>
+                        </li>
+                    <!--SmeltingSpeed-->
+                        <li Class="ModCheck.Sequence">
+                            <patchName>SmeltingSpeed</patchName>
+                            <operations>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="SmeltingSpeed"]/capacityFactors/li[1]/max</xpath>
+                                </li>
+                            </operations>
+                        </li>
+                    <!--SocialImpact-->
+                        <li Class="ModCheck.Sequence">
+                            <patchName>SocialImpact</patchName>
+                            <operations>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="SocialImpact"]/capacityFactors/li[1]/max</xpath>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="SocialImpact"]/capacityFactors/li[2]/max</xpath>
+                                </li>
+                            </operations>
+                        </li>
+                    <!--NegotiationAbility-->
+                        <li Class="ModCheck.Sequence">
+                            <patchName>NegotiationAbility</patchName>
+                            <operations>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="NegotiationAbility"]/capacityFactors/li[1]/max</xpath>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="NegotiationAbility"]/capacityFactors/li[2]/max</xpath>
+                                </li>
+                            </operations>
+                        </li>
+                    <!--ForagedNutritionPerDay-->
+                        <li Class="ModCheck.Sequence">
+                            <patchName>ForagedNutritionPerDay</patchName>
+                            <operations>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="ForagedNutritionPerDay"]/capacityFactors/li[1]/max</xpath>
+                                </li>
+                            </operations>
+                        </li>
+                    <!--ShootingAccuracyPawn-->
+                        <li Class="ModCheck.Sequence">
+                            <patchName>ShootingAccuracyPawn</patchName>
+                            <operations>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="ShootingAccuracyPawn"]/capacityOffsets/li[1]/max</xpath>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="ShootingAccuracyPawn"]/capacityOffsets/li[2]/max</xpath>
+                                </li>
+                            </operations>
+                        </li>
+                    <!--MeleeDodgeChance-->
+                        <li Class="ModCheck.Sequence">
+                            <patchName>MeleeDodgeChance</patchName>
+                            <operations>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="MeleeDodgeChance"]/capacityOffsets/li[2]/max</xpath>
+                                </li>
+                            </operations>
+                        </li>
+                    <!--MeleeHitChance-->
+                        <li Class="ModCheck.Sequence">
+                            <patchName>MeleeHitChance</patchName>
+                            <operations>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="MeleeHitChance"]/capacityOffsets/li[1]/max</xpath>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="MeleeHitChance"]/capacityOffsets/li[2]/max</xpath>
+                                </li>
+                            </operations>
+                        </li>
+                    <!--ArmorRatingBase-->
+                        <li Class="ModCheck.Sequence">
+                            <patchName>ArmorRatingBase</patchName>
+                            <operations>
+                                <li Class="PatchOperationRemove">
+                            <xpath>Defs/StatDef[@Name="ArmorRatingBase"]/maxValue</xpath>
+                                </li>
+                            </operations>
+                        </li>
+                </operations>
+            </Operation>
+</Patch>
