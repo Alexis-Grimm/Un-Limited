@@ -8,3 +8,4 @@ The steam workshop page is located here: https://steamcommunity.com/sharedfiles/
 
 Also this mod uses ModCheck, This mod includes the dll file for mod check so that you do not have to download it yourself, however it is generally better that you do:
 https://github.com/Nightinggale/ModCheck
+(It currently does not use ModCheck for Rimworld 1.1, but still does for Rimworld 1.0)
