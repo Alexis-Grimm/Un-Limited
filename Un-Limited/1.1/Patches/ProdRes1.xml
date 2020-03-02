@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <!--Core-->
+        <!--StatsDef-->
+            <!--StatsApparel-->
+                <!--ArmorRatingBase-->
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[@Name="ArmorRatingBase"]/maxValue</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[@Name="ArmorRatingBase"]/maxValue</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+            <!--StatsPawnsCombat-->
+                <!--MeleeHitChance-->
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="MeleeHitChance"]/capacityOffsets/li[1]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="MeleeHitChance"]/capacityOffsets/li[1]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>    
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="MeleeHitChance"]/capacityOffsets/li[2]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="MeleeHitChance"]/capacityOffsets/li[2]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                <!--MeleeDodgeChance-->
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="MeleeDodgeChance"]/capacityOffsets/li[2]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="MeleeDodgeChance"]/capacityOffsets/li[2]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                <!--ShootingAccuracyPawn-->
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="ShootingAccuracyPawn"]/capacityOffsets/li[1]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="ShootingAccuracyPawn"]/capacityOffsets/li[1]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="ShootingAccuracyPawn"]/capacityOffsets/li[2]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="ShootingAccuracyPawn"]/capacityOffsets/li[2]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+            <!--StatsPawnsGeneral-->
+                <!--ForagedNutritionPerDay-->
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="ForagedNutritionPerDay"]/capacityFactors/li[1]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="ForagedNutritionPerDay"]/capacityFactors/li[1]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+            <!--StatsPawnsSocial-->
+                <!--NegotiationAbility-->
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="NegotiationAbility"]/capacityFactors/li[1]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="NegotiationAbility"]/capacityFactors/li[1]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="NegotiationAbility"]/capacityFactors/li[2]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="NegotiationAbility"]/capacityFactors/li[2]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                <!--ArrestSuccessChance-->
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="ArrestSuccessChance"]/capacityFactors/li[1]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="ArrestSuccessChance"]/capacityFactors/li[1]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                <!--SocialImpact-->
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="SocialImpact"]/capacityFactors/li[1]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="SocialImpact"]/capacityFactors/li[1]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="SocialImpact"]/capacityFactors/li[2]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="SocialImpact"]/capacityFactors/li[2]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                <!--TameAnimalChance-->
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="TameAnimalChance"]/capacityFactors/li[1]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="TameAnimalChance"]/capacityFactors/li[1]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="TameAnimalChance"]/capacityFactors/li[2]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="TameAnimalChance"]/capacityFactors/li[2]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="TameAnimalChance"]/capacityFactors/li[3]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="TameAnimalChance"]/capacityFactors/li[3]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                <!--TrainAnimalChance-->
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="TrainAnimalChance"]/capacityFactors/li[1]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="TrainAnimalChance"]/capacityFactors/li[1]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="TrainAnimalChance"]/capacityFactors/li[2]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="TrainAnimalChance"]/capacityFactors/li[2]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="TrainAnimalChance"]/capacityFactors/li[3]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="TrainAnimalChance"]/capacityFactors/li[3]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+            <!--StatsPawnsWorkGeneral-->
+                <!--MiningSpeed-->
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="MiningSpeed"]/capacityFactors/li[2]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="MiningSpeed"]/capacityFactors/li[2]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                <!--MiningYield-->
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="MiningYield"]/maxValue</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="MiningYield"]/maxValue</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="MiningYield"]/capacityFactors/li[1]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="MiningYield"]/capacityFactors/li[1]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="MiningYield"]/capacityFactors/li[2]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="MiningYield"]/capacityFactors/li[2]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                <!--SmoothingSpeed-->
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="SmoothingSpeed"]/capacityFactors/li[2]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="SmoothingSpeed"]/capacityFactors/li[2]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                <!--ResearchSpeed-->
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="ResearchSpeed"]/capacityFactors/li[1]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="ResearchSpeed"]/capacityFactors/li[1]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="ResearchSpeed"]/capacityFactors/li[2]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="ResearchSpeed"]/capacityFactors/li[2]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                <!--AnimalGatherSpeed-->
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="AnimalGatherSpeed"]/capacityFactors/li[2]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="AnimalGatherSpeed"]/capacityFactors/li[2]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                <!--AnimalGatherYield-->
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="AnimalGatherYield"]/maxValue</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="AnimalGatherYield"]/maxValue</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="AnimalGatherYield"]/capacityFactors/li[2]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="AnimalGatherYield"]/capacityFactors/li[2]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                <!--PlantWorkSpeed-->
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="PlantWorkSpeed"]/capacityFactors/li[2]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="PlantWorkSpeed"]/capacityFactors/li[2]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                <!--PlantHarvestYield-->
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="PlantHarvestYield"]/maxValue</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="PlantHarvestYield"]/maxValue</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="PlantHarvestYield"]/capacityFactors/li[2]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="PlantHarvestYield"]/capacityFactors/li[2]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                <!--ConstructionSpeed-->
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="ConstructionSpeed"]/capacityFactors/li[2]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="ConstructionSpeed"]/capacityFactors/li[2]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                <!--ConstructSuccessChance-->
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="ConstructSuccessChance"]/maxValue</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="ConstructSuccessChance"]/maxValue</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="ConstructSuccessChance"]/capacityFactors/li[2]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="ConstructSuccessChance"]/capacityFactors/li[2]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                <!--FixBrokenDownBuildingSuccessChance-->
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="FixBrokenDownBuildingSuccessChance"]/maxValue</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="FixBrokenDownBuildingSuccessChance"]/maxValue</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="FixBrokenDownBuildingSuccessChance"]/capacityFactors/li[2]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="FixBrokenDownBuildingSuccessChance"]/capacityFactors/li[2]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+            <!--StatsPawnsWorkMedical-->
+                <!--MedicalTendSpeed-->
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="MedicalTendSpeed"]/capacityFactors/li[1]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="MedicalTendSpeed"]/capacityFactors/li[1]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                <!--MedicalTendQuality-->
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="MedicalTendQuality"]/capacityFactors/li[1]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="MedicalTendQuality"]/capacityFactors/li[1]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="MedicalTendQuality"]/capacityFactors/li[2]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="MedicalTendQuality"]/capacityFactors/li[2]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                <!--MedicalOperationSpeed-->
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="MedicalOperationSpeed"]/capacityFactors/li[1]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="MedicalOperationSpeed"]/capacityFactors/li[1]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                <!--MedicalSurgerySuccessChance-->
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="MedicalSurgerySuccessChance"]/capacityFactors/li[1]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="MedicalSurgerySuccessChance"]/capacityFactors/li[1]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+            <!--StatsPawnsWorkRecipes-->
+                <!--SmeltingSpeed-->
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="SmeltingSpeed"]/capacityFactors/li[1]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="SmeltingSpeed"]/capacityFactors/li[1]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                <!--GeneralLaborSpeed-->
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="GeneralLaborSpeed"]/capacityFactors/li[2]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="GeneralLaborSpeed"]/capacityFactors/li[2]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                <!--DrugSynthesisSpeed-->
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="DrugSynthesisSpeed"]/capacityFactors/li[1]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="DrugSynthesisSpeed"]/capacityFactors/li[1]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                <!--CookSpeed-->
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="CookSpeed"]/capacityOffsets/li[1]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="CookSpeed"]/capacityOffsets/li[1]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="CookSpeed"]/capacityOffsets/li[2]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="CookSpeed"]/capacityOffsets/li[2]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                <!--DrugCookingSpeed-->
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="DrugCookingSpeed"]/capacityFactors/li[1]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="DrugCookingSpeed"]/capacityFactors/li[1]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                <!--ButcherySpeedBase-->
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[@Name="ButcherySpeedBase"]/capacityFactors/li[1]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[@Name="ButcherySpeedBase"]/capacityFactors/li[1]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                <!--ButcheryEfficiencyBase-->
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[@Name="ButcheryEfficiencyBase"]/capacityFactors/li[1]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[@Name="ButcheryEfficiencyBase"]/capacityFactors/li[1]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+</Patch>

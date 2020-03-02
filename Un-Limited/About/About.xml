@@ -1,10 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 	<name>Un-Limited</name>
+	<packageId>Grimm.Unlimited</packageId>
 	<author>Grimm</author>
 	<supportedVersions>
-	<li>1.0</li>
+		<li>1.0</li>
+		<li>1.1</li>
 	</supportedVersions>
-	<description>Version 1.1
-    Removes the limitations of pathetic flesh to give you the true transcendent bionics experience.
+	<modDependencies></modDependencies>
+	<loadBefore></loadBefore>
+	<loadAfter></loadAfter>
+	<incompatibleWith></incompatibleWith>
+	<description>
+Version 1.2
+Removes the limitations of pathetic flesh to give you the true transcendent bionics experience.
 	</description>
 </ModMetaData>
