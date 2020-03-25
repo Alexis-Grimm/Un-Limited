@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Manifest>
-    <identifier>Un-Limited</identifier>
-    <version>1.2</version>
+    <identifier>ModManager</identifier>
+    <version>0.1.2.1</version>
+    <dependencies>
+    </dependencies>
+    <incompatibleWith>
+    </incompatibleWith>
+    <loadBefore>
+    </loadBefore>
+    <loadAfter>
+        <li>[SYR]HarvestYieldPatch</li>
+    </loadAfter>
+    <suggests>
+        <li>[SYR]HarvestYieldPatch</li>
+    </suggests>
+    <showCrossPromotions>true</showCrossPromotions>
+    <manifestUri>https://github.com/Alexis-Grimm/Un-Limited/blob/master/Un-Limited/About/Manifest.xml</manifestUri>
+    <downloadUri>https://github.com/Alexis-Grimm/Un-Limited/releases</downloadUri>
 </Manifest>

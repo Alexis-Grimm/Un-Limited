@@ -629,4 +629,30 @@
                             </li>
                         </operations>
                     </Operation>
+                <!--ButcheryFleshEfficiency-->
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="ButcheryFleshEfficiency"]/maxValue</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="ButcheryFleshEfficiency"]/maxValue</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                <!--ButcheryMechanoidEfficiency-->
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="ButcheryMechanoidEfficiency"]/maxValue</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="ButcheryMechanoidEfficiency"]/maxValue</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
 </Patch>
