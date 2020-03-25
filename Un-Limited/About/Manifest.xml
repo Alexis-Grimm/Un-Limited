@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Manifest>
     <identifier>ModManager</identifier>
-    <version>0.1.2.1</version>
+    <version>0.1.2.2</version>
     <dependencies>
     </dependencies>
     <incompatibleWith>
@@ -15,6 +15,6 @@
         <li>[SYR]HarvestYieldPatch</li>
     </suggests>
     <showCrossPromotions>true</showCrossPromotions>
-    <manifestUri>https://github.com/Alexis-Grimm/Un-Limited/blob/master/Un-Limited/About/Manifest.xml</manifestUri>
+    <manifestUri>https://raw.githubusercontent.com/Alexis-Grimm/Un-Limited/master/Un-Limited/About/Manifest.xml</manifestUri>
     <downloadUri>https://github.com/Alexis-Grimm/Un-Limited/releases</downloadUri>
 </Manifest>
