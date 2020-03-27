@@ -10,13 +10,11 @@
 	<modDependencies></modDependencies>
 	<loadBefore></loadBefore>
 	<loadAfter>
-		<li>
-			<packageId>syrchalis.harvestyieldpatch</packageId>
-		</li>
+		<li>syrchalis.harvestyieldpatch</li>
 	</loadAfter>
 	<incompatibleWith></incompatibleWith>
 	<description>
-Version 1.2.2
+Version 1.2.3
 Removes the limitations of pathetic flesh to give you the true transcendent bionics experience.
 	</description>
 </ModMetaData>
