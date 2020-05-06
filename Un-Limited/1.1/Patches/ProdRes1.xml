@@ -246,6 +246,19 @@
                             </li>
                         </operations>
                     </Operation>
+                <!--DeepDrillingSpeed-->
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="DeepDrillingSpeed"]/capacityFactors/li[2]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="DeepDrillingSpeed"]/capacityFactors/li[2]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
                 <!--MiningYield-->
                     <Operation Class="PatchOperationSequence">
                         <success>Always</success>
