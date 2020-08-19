@@ -6,6 +6,7 @@
 	<supportedVersions>
 		<li>1.0</li>
 		<li>1.1</li>
+		<li>1.2</li>
 	</supportedVersions>
 	<modDependencies></modDependencies>
 	<loadBefore></loadBefore>
@@ -14,7 +15,7 @@
 	</loadAfter>
 	<incompatibleWith></incompatibleWith>
 	<description>
-Version 1.2.4
+Version 1.2.5
 Removes the limitations of pathetic flesh to give you the true transcendent bionics experience.
 	</description>
 </ModMetaData>
