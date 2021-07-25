@@ -22,11 +22,11 @@
                         <success>Always</success>
                         <operations>
                             <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="Conversion Power"]/capacityFactors/li[2]/max</xpath>
+                                <xpath>Defs/StatDef[defName="ConversionPower"]/capacityFactors/li[2]/max</xpath>
                                 <success>Normal</success>
                             </li>
                             <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="Conversion Power"]/capacityFactors/li[2]/max</xpath>
+                                <xpath>Defs/StatDef[defName="ConversionPower"]/capacityFactors/li[2]/max</xpath>
                             </li>
                         </operations>
                     </Operation>
@@ -36,11 +36,11 @@
                         <success>Always</success>
                         <operations>
                             <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="Hacking Speed"]/capacityFactors/li[1]/max</xpath>
+                                <xpath>Defs/StatDef[defName="HackingSpeed"]/capacityFactors/li[1]/max</xpath>
                                 <success>Normal</success>
                             </li>
                             <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="Hacking Speed"]/capacityFactors/li[1]/max</xpath>
+                                <xpath>Defs/StatDef[defName="HackingSpeed"]/capacityFactors/li[1]/max</xpath>
                             </li>
                         </operations>
                     </Operation>
@@ -49,11 +49,11 @@
                         <success>Always</success>
                         <operations>
                             <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="Hacking Speed"]/capacityFactors/li[2]/max</xpath>
+                                <xpath>Defs/StatDef[defName="HackingSpeed"]/capacityFactors/li[2]/max</xpath>
                                 <success>Normal</success>
                             </li>
                             <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="Hacking Speed"]/capacityFactors/li[2]/max</xpath>
+                                <xpath>Defs/StatDef[defName="HackingSpeed"]/capacityFactors/li[2]/max</xpath>
                             </li>
                         </operations>
                     </Operation>
