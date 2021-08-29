@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <!--Ideology-->
+        <!--StatsDef-->
+            <!--StatsPawnsIdeo-->
+                <!--ConversionPower-->
+                    <!--TalkingMax-->
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="ConversionPower"]/capacityFactors/li[1]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="ConversionPower"]/capacityFactors/li[1]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                    <!--HearingMax-->
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="ConversionPower"]/capacityFactors/li[2]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="ConversionPower"]/capacityFactors/li[2]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                <!--HackingSpeed-->
+                    <!--TalkingMax-->
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="HackingSpeed"]/capacityFactors/li[1]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="HackingSpeed"]/capacityFactors/li[1]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+                    <!--HearingMax-->
+                    <Operation Class="PatchOperationSequence">
+                        <success>Always</success>
+                        <operations>
+                            <li Class="PatchOperationTest">
+                                <xpath>Defs/StatDef[defName="HackingSpeed"]/capacityFactors/li[2]/max</xpath>
+                                <success>Normal</success>
+                            </li>
+                            <li Class="PatchOperationRemove">
+                                <xpath>Defs/StatDef[defName="HackingSpeed"]/capacityFactors/li[2]/max</xpath>
+                            </li>
+                        </operations>
+                    </Operation>
+</Patch>
