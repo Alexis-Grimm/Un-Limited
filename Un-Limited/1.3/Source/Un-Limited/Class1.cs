@@ -9,62 +9,99 @@ using UnityEngine;
 
 namespace Grimm_UnLimited
 {
+	[StaticConstructorOnStartup]
     public class ULSettings : ModSettings
 	{
-        /// <summary>
-        /// The settings for this mod
-        /// </summary>
-        public bool WSCapLimit;
-		public bool WSHardCaps;
-		public bool MEDHardCaps;
-		public bool MEDCapCaps;
+		//Misc Stats
+		public static bool FNPD_Manip = true;
+
+		//Work Speed Stats
+
+		//Work Yield Stats
+
+		//Medical Stats
+
+		//Combat Stats
+		public static bool ARB_Max = true;
+		public static bool MHC_Manip = true;
+		public static bool MHC_Sight = true;
+		public static bool MDC_Sight = true;
+		public static bool SAP_Sight = true;
+		public static bool SAP_Manip = true;
+
+		//Social Stats
+		public static bool NA_Talk = true;
+		public static bool NA_Hear = true;
+
+		//Modded Stats
+
+		//Capacity Stats
+
+		public static bool WSCapLimit = true;
+		public static bool WSHardCaps = true;
+		public static bool MEDHardCaps = true;
+		public static bool MEDCapCaps = true;
+
+		public static Vector2 scrollPosition = Vector2.zero;
 
 		/// <summary>
-		/// scribe values of mod settings
+		/// Gui Portion of the Settings
 		/// </summary>
-		public override void ExposeData()
-		{
-			Scribe_Values.Look(ref WSCapLimit, "WSCapLimit");
+		/// <param name="inRect">A Unity Rect with the size of the settings window.</param>
+		public static void DoSettingsWindowContents(Rect inRect) {
+			inRect.yMin += 15f;
+			inRect.yMax -= 15f;
+
+			var defaultColumnWidth = (inRect.width - 50);
+			Listing_Standard list = new Listing_Standard() { ColumnWidth = defaultColumnWidth };
+
+			var outRect = new Rect(inRect.x, inRect.y, inRect.width, inRect.height);
+			var scrollRect = new Rect(0f, 0f, inRect.width - 16f, inRect.height * 12f);
+			Widgets.BeginScrollView(outRect, ref scrollPosition, scrollRect, true);
+
+			list.Begin(scrollRect);
+
+			list.CheckboxLabeled("Work Speed Capacity Limit", ref WSCapLimit, "Removes Capacity limitations for work speed stats");
+			list.End();
+			Widgets.EndScrollView();
+		}
+
+		/// <summary>
+		/// Exposing settings data
+		/// </summary>
+		public override void ExposeData() {
 			base.ExposeData();
+
+			Scribe_Values.Look<bool>(ref WSCapLimit, "WSCapLimit", true);
 		}
 	}
 
 	public class UnLimited : Mod
 	{
 		/// <summary>
-		/// Reference the settings
-		/// </summary>
-		ULSettings settings;
-
-		/// <summary>
 		/// constructor for reference to settings
 		/// </summary>
 		/// <param name="content"></param>
-		public UnLimited(ModContentPack content) :base(content)
-		{
-			this.settings = GetSettings<ULSettings>();
+		public UnLimited(ModContentPack content) : base(content) {
+			base.GetSettings<ULSettings>();
 		}
 
-		/// <summary>
-		/// Gui Portion of the Settings
-		/// </summary>
-		/// <param name="inRect">A Unity Rect with the size of the settings window.</param>
-		public override void DoSettingsWindowContents(Rect inRect)
-		{
-			Listing_Standard listingStandard = new Listing_Standard();
-			listingStandard.Begin(inRect);
-			listingStandard.CheckboxLabeled("Work Speed Capacity Limit", ref settings.WSCapLimit, "Removes Capacity limitations for work speed stats");
-			listingStandard.End();
-			base.DoSettingsWindowContents(inRect);
+		public void Save() {
+			LoadedModManager.GetMod<UnLimited>().GetSettings<ULSettings>().Write();
 		}
 
 		/// <summary>
 		/// SettingsCategory Override
 		/// </summary>
-		/// <returns>The translated mod name</returns>
-		public override string SettingsCategory()
-		{
-			return "Grimm_UnLimited".Translate();
+		/// <returns>The mod name</returns>
+		public override string SettingsCategory() {
+			return "Unlimited";
 		}
+
+		public override void DoSettingsWindowContents(Rect inRect) {
+			ULSettings.DoSettingsWindowContents(inRect);
+		}
+
 	}
+
 }

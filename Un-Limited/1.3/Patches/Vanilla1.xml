@@ -252,19 +252,25 @@
                     </Operation>
             <!--StatsPawnsWorkGeneral-->
                 <!--MiningSpeed-->
-                    <!--SightMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="MiningSpeed"]/capacityFactors/li[2]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="MiningSpeed"]/capacityFactors/li[2]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
+                <Operation Class="XmlExtensions.OptionalPatchExternal">
+                    <ModSettingsClass>Grimm_UnLimited.ULSettings</ModSettingsClass>
+                    <field>WSCapLimit</field>
+                    <caseTrue>
+                        <!--SightMax-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="MiningSpeed"]/capacityFactors/li[2]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="MiningSpeed"]/capacityFactors/li[2]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                    </caseTrue>
+                </Operation>
                 <!--DeepDrillingSpeed-->
                     <!--SightMax-->
                     <Operation Class="PatchOperationSequence">
