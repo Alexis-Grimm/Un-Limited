@@ -16,8 +16,26 @@ namespace Grimm_UnLimited
 		public static bool FNPD_Manip = true;
 
 		//Work Speed Stats
+		public static bool MS_Sight = true;
+		public static bool DDS_Sight = true;
+		public static bool SS_Sight = true;
+		public static bool RS_Manip = true;
+		public static bool RS_Sight = true;
+		public static bool AGS_Sight = true;
+		public static bool PWS_Sight = true;
+		public static bool CS_Sight = true;
+		public static bool CSC_Sight = true;
+		public static bool CSC_Max = false;
 
 		//Work Yield Stats
+		public static bool MY_Manip = true;
+		public static bool MY_Sight = true;
+		public static bool MY_Max = false;
+		public static bool AGY_Sight = true;
+		public static bool AGY_Max = false;
+		public static bool PWY_Sight = true;
+		public static bool PWY_Max = false;
+		public static bool DHY_Max = false;
 
 		//Medical Stats
 
@@ -32,6 +50,15 @@ namespace Grimm_UnLimited
 		//Social Stats
 		public static bool NA_Talk = true;
 		public static bool NA_Hear = true;
+		public static bool ASC_Manip = true;
+		public static bool SI_Talk = true;
+		public static bool SI_Hear = true;
+		public static bool TAC_Talk = true;
+		public static bool TAC_Hear = true;
+		public static bool TAC_Manip = true;
+		public static bool TrAC_Talk = true;
+		public static bool TrAC_Hear = true;
+		public static bool TrAC_Manip = true;
 
 		//Modded Stats
 
