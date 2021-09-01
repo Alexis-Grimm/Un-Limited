@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HugsLib.UpdateFeatureDef Abstract="true" Name="UnlimitedNewsBase">
+		<modNameReadable>Unlimited</modNameReadable>
+		<modIdentifier>Unlimited</modIdentifier>
+		<linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1668141382</linkUrl>
+	</HugsLib.UpdateFeatureDef>
+	
+	<HugsLib.UpdateFeatureDef ParentName="UnlimitedNewsBase">
+		<defName>Unlimited_1.2.8</defName>
+		<assemblyVersion>1.2.8</assemblyVersion>
+        <targetAudience>AllPlayers</targetAudience>
+		<content>
+Due to popular request I will soon be adding an options menu to this mod, however this will result in the mod requiring XML Extensions in order to function, I would suggest installing it as soon as possible. |
+Once the Mod Options update is released those without XML Extensions installed will recieve a great deal of harmless errors, and Unlimited will cease working. |
+This will not break saves or anything, it simply may be slightly alarming. If you already have XML Extensions in your mod list you will have no issues. Thank you for using this mod, I hope you enjoy!
+        </content>
+	</HugsLib.UpdateFeatureDef>
+</Defs>
