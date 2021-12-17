@@ -4,734 +4,980 @@
         <!--StatsDef-->
             <!--StatsApparel-->
                 <!--ArmorRatingBase-->
-                    <!--MaxValue-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[@Name="ArmorRatingBase"]/maxValue</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[@Name="ArmorRatingBase"]/maxValue</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
+                <Operation Class="XmlExtensions.OptionalPatchExternal">
+                    <ModSettingsClass>Grimm_UnLimited.ULSettings</ModSettingsClass>
+                    <field>ArmorRatingBase_Max</field>
+                    <caseTrue>
+                        <!--MaxValue-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[@Name="ArmorRatingBase"]/maxValue</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[@Name="ArmorRatingBase"]/maxValue</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                    </caseTrue>
+                </Operation>
             <!--StatsPawnsCombat-->
                 <!--MeleeHitChance-->
-                    <!--ManipulationMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="MeleeHitChance"]/capacityOffsets/li[1]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="MeleeHitChance"]/capacityOffsets/li[1]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>   
-                    <!--SightMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="MeleeHitChance"]/capacityOffsets/li[2]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="MeleeHitChance"]/capacityOffsets/li[2]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
+                <Operation Class="XmlExtensions.OptionalPatchExternal">
+                    <ModSettingsClass>Grimm_UnLimited.ULSettings</ModSettingsClass>
+                    <field>MeleeHitChance_Caps</field>
+                    <caseTrue>
+                        <!--ManipulationMax-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="MeleeHitChance"]/capacityOffsets/li[1]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="MeleeHitChance"]/capacityOffsets/li[1]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>   
+                        <!--SightMax-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="MeleeHitChance"]/capacityOffsets/li[2]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="MeleeHitChance"]/capacityOffsets/li[2]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                    </caseTrue>
+                </Operation>
                 <!--MeleeDodgeChance-->
-                    <!--SightMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="MeleeDodgeChance"]/capacityOffsets/li[2]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="MeleeDodgeChance"]/capacityOffsets/li[2]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
+                <Operation Class="XmlExtensions.OptionalPatchExternal">
+                    <ModSettingsClass>Grimm_UnLimited.ULSettings</ModSettingsClass>
+                    <field>MeleeDodgeChance_Caps</field>
+                    <caseTrue>
+                        <!--SightMax-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="MeleeDodgeChance"]/capacityOffsets/li[2]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="MeleeDodgeChance"]/capacityOffsets/li[2]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                    </caseTrue>
+                </Operation>
                 <!--ShootingAccuracyPawn-->
-                    <!--SightMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="ShootingAccuracyPawn"]/capacityOffsets/li[1]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="ShootingAccuracyPawn"]/capacityOffsets/li[1]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
-                    <!--ManipulationMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="ShootingAccuracyPawn"]/capacityOffsets/li[2]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="ShootingAccuracyPawn"]/capacityOffsets/li[2]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
+                <Operation Class="XmlExtensions.OptionalPatchExternal">
+                    <ModSettingsClass>Grimm_UnLimited.ULSettings</ModSettingsClass>
+                    <field>ShootingAccuracyPawn_Caps</field>
+                    <caseTrue>
+                        <!--SightMax-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="ShootingAccuracyPawn"]/capacityOffsets/li[1]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="ShootingAccuracyPawn"]/capacityOffsets/li[1]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                        <!--ManipulationMax-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="ShootingAccuracyPawn"]/capacityOffsets/li[2]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="ShootingAccuracyPawn"]/capacityOffsets/li[2]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                    </caseTrue>
+                </Operation>
             <!--StatsPawnsGeneral-->
                 <!--ForagedNutritionPerDay-->
-                    <!--ManipulationMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="ForagedNutritionPerDay"]/capacityFactors/li[1]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="ForagedNutritionPerDay"]/capacityFactors/li[1]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
+                <Operation Class="XmlExtensions.OptionalPatchExternal">
+                    <ModSettingsClass>Grimm_UnLimited.ULSettings</ModSettingsClass>
+                    <field>ForagedNutrition_Caps</field>
+                    <caseTrue>
+                        <!--ManipulationMax-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="ForagedNutritionPerDay"]/capacityFactors/li[1]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="ForagedNutritionPerDay"]/capacityFactors/li[1]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                    </caseTrue>
+                </Operation>
             <!--StatsPawnsSocial-->
                 <!--NegotiationAbility-->
-                    <!--TalkingMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="NegotiationAbility"]/capacityFactors/li[1]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="NegotiationAbility"]/capacityFactors/li[1]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
-                    <!--HearingMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="NegotiationAbility"]/capacityFactors/li[2]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="NegotiationAbility"]/capacityFactors/li[2]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
+                <Operation Class="XmlExtensions.OptionalPatchExternal">
+                    <ModSettingsClass>Grimm_UnLimited.ULSettings</ModSettingsClass>
+                    <field>NegotiationAbility_Caps</field>
+                    <caseTrue>
+                        <!--TalkingMax-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="NegotiationAbility"]/capacityFactors/li[1]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="NegotiationAbility"]/capacityFactors/li[1]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                        <!--HearingMax-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="NegotiationAbility"]/capacityFactors/li[2]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="NegotiationAbility"]/capacityFactors/li[2]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                    </caseTrue>
+                </Operation>
                 <!--ArrestSuccessChance-->
-                    <!--ManipulationMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="ArrestSuccessChance"]/capacityFactors/li[1]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="ArrestSuccessChance"]/capacityFactors/li[1]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
+                <Operation Class="XmlExtensions.OptionalPatchExternal">
+                    <ModSettingsClass>Grimm_UnLimited.ULSettings</ModSettingsClass>
+                    <field>ArrestSuccessChance_Caps</field>
+                    <caseTrue>
+                        <!--ManipulationMax-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="ArrestSuccessChance"]/capacityFactors/li[1]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="ArrestSuccessChance"]/capacityFactors/li[1]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                    </caseTrue>
+                </Operation>
                 <!--SocialImpact-->
-                    <!--TalkingMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="SocialImpact"]/capacityFactors/li[1]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="SocialImpact"]/capacityFactors/li[1]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
-                    <!--HearingMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="SocialImpact"]/capacityFactors/li[2]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="SocialImpact"]/capacityFactors/li[2]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
+                <Operation Class="XmlExtensions.OptionalPatchExternal">
+                    <ModSettingsClass>Grimm_UnLimited.ULSettings</ModSettingsClass>
+                    <field>SocialImpact_Caps</field>
+                    <caseTrue>
+                        <!--TalkingMax-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="SocialImpact"]/capacityFactors/li[1]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="SocialImpact"]/capacityFactors/li[1]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                        <!--HearingMax-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="SocialImpact"]/capacityFactors/li[2]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="SocialImpact"]/capacityFactors/li[2]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                    </caseTrue>
+                </Operation>
                 <!--TameAnimalChance-->
-                    <!--TalkingMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="TameAnimalChance"]/capacityFactors/li[1]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="TameAnimalChance"]/capacityFactors/li[1]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
-                    <!--HearingMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="TameAnimalChance"]/capacityFactors/li[2]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="TameAnimalChance"]/capacityFactors/li[2]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
-                    <!--ManipulationMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="TameAnimalChance"]/capacityFactors/li[3]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="TameAnimalChance"]/capacityFactors/li[3]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
+                <Operation Class="XmlExtensions.OptionalPatchExternal">
+                    <ModSettingsClass>Grimm_UnLimited.ULSettings</ModSettingsClass>
+                    <field>TameAnimalChance_Caps</field>
+                    <caseTrue>
+                        <!--TalkingMax-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="TameAnimalChance"]/capacityFactors/li[1]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="TameAnimalChance"]/capacityFactors/li[1]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                        <!--HearingMax-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="TameAnimalChance"]/capacityFactors/li[2]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="TameAnimalChance"]/capacityFactors/li[2]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                        <!--ManipulationMax-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="TameAnimalChance"]/capacityFactors/li[3]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="TameAnimalChance"]/capacityFactors/li[3]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                    </caseTrue>
+                </Operation>
                 <!--TrainAnimalChance-->
-                    <!--TalkingMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="TrainAnimalChance"]/capacityFactors/li[1]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="TrainAnimalChance"]/capacityFactors/li[1]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
-                    <!--HearingMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="TrainAnimalChance"]/capacityFactors/li[2]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="TrainAnimalChance"]/capacityFactors/li[2]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
-                    <!--ManipulationMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="TrainAnimalChance"]/capacityFactors/li[3]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="TrainAnimalChance"]/capacityFactors/li[3]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
+                <Operation Class="XmlExtensions.OptionalPatchExternal">
+                    <ModSettingsClass>Grimm_UnLimited.ULSettings</ModSettingsClass>
+                    <field>TrainAnimalChance_Caps</field>
+                    <caseTrue>
+                        <!--TalkingMax-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="TrainAnimalChance"]/capacityFactors/li[1]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="TrainAnimalChance"]/capacityFactors/li[1]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                        <!--HearingMax-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="TrainAnimalChance"]/capacityFactors/li[2]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="TrainAnimalChance"]/capacityFactors/li[2]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                        <!--ManipulationMax-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="TrainAnimalChance"]/capacityFactors/li[3]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="TrainAnimalChance"]/capacityFactors/li[3]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                    </caseTrue>
+                </Operation>
             <!--StatsPawnsWorkGeneral-->
                 <!--MiningSpeed-->
-                    <!--SightMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="MiningSpeed"]/capacityFactors/li[2]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="MiningSpeed"]/capacityFactors/li[2]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
+                <Operation Class="XmlExtensions.OptionalPatchExternal">
+                    <ModSettingsClass>Grimm_UnLimited.ULSettings</ModSettingsClass>
+                    <field>MiningSpeed_Caps</field>
+                    <caseTrue>
+                        <!--SightMax-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="MiningSpeed"]/capacityFactors/li[2]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="MiningSpeed"]/capacityFactors/li[2]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                    </caseTrue>
+                </Operation>
                 <!--DeepDrillingSpeed-->
+                <Operation Class="XmlExtensions.OptionalPatchExternal">
+                    <ModSettingsClass>Grimm_UnLimited.ULSettings</ModSettingsClass>
+                    <field>DeepDrillingSpeed_Caps</field>
+                    <caseTrue>
                     <!--SightMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="DeepDrillingSpeed"]/capacityFactors/li[2]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="DeepDrillingSpeed"]/capacityFactors/li[2]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="DeepDrillingSpeed"]/capacityFactors/li[2]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="DeepDrillingSpeed"]/capacityFactors/li[2]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                    </caseTrue>
+                </Operation>
                 <!--MiningYield-->
-                    <!--MaxValue-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="MiningYield"]/maxValue</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="MiningYield"]/maxValue</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
-                    <!--ManipulationMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="MiningYield"]/capacityFactors/li[1]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="MiningYield"]/capacityFactors/li[1]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
-                    <!--SightMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="MiningYield"]/capacityFactors/li[2]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="MiningYield"]/capacityFactors/li[2]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
+                <Operation Class="XmlExtensions.OptionalPatchExternal">
+                    <ModSettingsClass>Grimm_UnLimited.ULSettings</ModSettingsClass>
+                    <field>MiningYield_Max</field>
+                    <caseTrue>
+                        <!--MaxValue-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="MiningYield"]/maxValue</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="MiningYield"]/maxValue</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                    </caseTrue>
+                </Operation>
+                <Operation Class="XmlExtensions.OptionalPatchExternal">
+                    <ModSettingsClass>Grimm_UnLimited.ULSettings</ModSettingsClass>
+                    <field>MiningYield_Caps</field>
+                    <caseTrue>
+                        <!--ManipulationMax-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="MiningYield"]/capacityFactors/li[1]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="MiningYield"]/capacityFactors/li[1]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                        <!--SightMax-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="MiningYield"]/capacityFactors/li[2]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="MiningYield"]/capacityFactors/li[2]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                    </caseTrue>
+                </Operation>
                 <!--SmoothingSpeed-->
-                    <!--SightMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="SmoothingSpeed"]/capacityFactors/li[2]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="SmoothingSpeed"]/capacityFactors/li[2]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
+                <Operation Class="XmlExtensions.OptionalPatchExternal">
+                    <ModSettingsClass>Grimm_UnLimited.ULSettings</ModSettingsClass>
+                    <field>SmoothingSpeed_Caps</field>
+                    <caseTrue>
+                        <!--SightMax-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="SmoothingSpeed"]/capacityFactors/li[2]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="SmoothingSpeed"]/capacityFactors/li[2]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                    </caseTrue>
+                </Operation>
                 <!--ResearchSpeed-->
-                    <!--ManipulationMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="ResearchSpeed"]/capacityFactors/li[1]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="ResearchSpeed"]/capacityFactors/li[1]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
-                    <!--SightMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="ResearchSpeed"]/capacityFactors/li[2]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="ResearchSpeed"]/capacityFactors/li[2]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
+                <Operation Class="XmlExtensions.OptionalPatchExternal">
+                    <ModSettingsClass>Grimm_UnLimited.ULSettings</ModSettingsClass>
+                    <field>ResearchSpeed_Caps</field>
+                    <caseTrue>
+                        <!--ManipulationMax-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="ResearchSpeed"]/capacityFactors/li[1]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="ResearchSpeed"]/capacityFactors/li[1]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                        <!--SightMax-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="ResearchSpeed"]/capacityFactors/li[2]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="ResearchSpeed"]/capacityFactors/li[2]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                    </caseTrue>
+                </Operation>
                 <!--AnimalGatherSpeed-->
-                    <!--SightMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="AnimalGatherSpeed"]/capacityFactors/li[2]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="AnimalGatherSpeed"]/capacityFactors/li[2]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
+                <Operation Class="XmlExtensions.OptionalPatchExternal">
+                    <ModSettingsClass>Grimm_UnLimited.ULSettings</ModSettingsClass>
+                    <field>AnimalGatherSpeed_Caps</field>
+                    <caseTrue>
+                        <!--SightMax-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="AnimalGatherSpeed"]/capacityFactors/li[2]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="AnimalGatherSpeed"]/capacityFactors/li[2]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                    </caseTrue>
+                </Operation>
                 <!--AnimalGatherYield-->
-                    <!--MaxValue-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="AnimalGatherYield"]/maxValue</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="AnimalGatherYield"]/maxValue</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
-                    <!--SightMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="AnimalGatherYield"]/capacityFactors/li[2]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="AnimalGatherYield"]/capacityFactors/li[2]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
+                <Operation Class="XmlExtensions.OptionalPatchExternal">
+                    <ModSettingsClass>Grimm_UnLimited.ULSettings</ModSettingsClass>
+                    <field>AnimalGatherYield_Max</field>
+                    <caseTrue>
+                        <!--MaxValue-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="AnimalGatherYield"]/maxValue</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="AnimalGatherYield"]/maxValue</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                    </caseTrue>
+                </Operation>
+                <Operation Class="XmlExtensions.OptionalPatchExternal">
+                    <ModSettingsClass>Grimm_UnLimited.ULSettings</ModSettingsClass>
+                    <field>AnimalGatherYield_Caps</field>
+                    <caseTrue>
+                        <!--SightMax-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="AnimalGatherYield"]/capacityFactors/li[2]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="AnimalGatherYield"]/capacityFactors/li[2]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                    </caseTrue>
+                </Operation>
                 <!--PlantWorkSpeed-->
-                    <!--SightMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="PlantWorkSpeed"]/capacityFactors/li[2]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="PlantWorkSpeed"]/capacityFactors/li[2]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
+                <Operation Class="XmlExtensions.OptionalPatchExternal">
+                    <ModSettingsClass>Grimm_UnLimited.ULSettings</ModSettingsClass>
+                    <field>PlantWorkSpeed_Caps</field>
+                    <caseTrue>
+                        <!--SightMax-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="PlantWorkSpeed"]/capacityFactors/li[2]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="PlantWorkSpeed"]/capacityFactors/li[2]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                    </caseTrue>
+                </Operation>
                 <!--PlantHarvestYield-->
-                    <!--MaxValue-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="PlantHarvestYield"]/maxValue</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="PlantHarvestYield"]/maxValue</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
-                    <!--SightMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="PlantHarvestYield"]/capacityFactors/li[2]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="PlantHarvestYield"]/capacityFactors/li[2]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
+                <Operation Class="XmlExtensions.OptionalPatchExternal">
+                    <ModSettingsClass>Grimm_UnLimited.ULSettings</ModSettingsClass>
+                    <field>PlantHarvestYield_Max</field>
+                    <caseTrue>
+                        <!--MaxValue-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="PlantHarvestYield"]/maxValue</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="PlantHarvestYield"]/maxValue</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                    </caseTrue>
+                </Operation>
+                <Operation Class="XmlExtensions.OptionalPatchExternal">
+                    <ModSettingsClass>Grimm_UnLimited.ULSettings</ModSettingsClass>
+                    <field>PlantHarvestYield_Caps</field>
+                    <caseTrue>
+                        <!--SightMax-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="PlantHarvestYield"]/capacityFactors/li[2]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="PlantHarvestYield"]/capacityFactors/li[2]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                    </caseTrue>
+                </Operation>
                 <!--DrugHarvestYield-->
-                    <!--MaxValue-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="DrugHarvestYield"]/maxValue</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="DrugHarvestYield"]/maxValue</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
+                <Operation Class="XmlExtensions.OptionalPatchExternal">
+                    <ModSettingsClass>Grimm_UnLimited.ULSettings</ModSettingsClass>
+                    <field>DrugHarvestYield_Max</field>
+                    <caseTrue>
+                        <!--MaxValue-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="DrugHarvestYield"]/maxValue</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="DrugHarvestYield"]/maxValue</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                    </caseTrue>
+                </Operation>
                 <!--ConstructionSpeed-->
-                    <!--SightMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="ConstructionSpeed"]/capacityFactors/li[2]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="ConstructionSpeed"]/capacityFactors/li[2]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
+                <Operation Class="XmlExtensions.OptionalPatchExternal">
+                    <ModSettingsClass>Grimm_UnLimited.ULSettings</ModSettingsClass>
+                    <field>ConstructionSpeed_Caps</field>
+                    <caseTrue>
+                        <!--SightMax-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="ConstructionSpeed"]/capacityFactors/li[2]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="ConstructionSpeed"]/capacityFactors/li[2]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                    </caseTrue>
+                </Operation>
                 <!--ConstructSuccessChance-->
-                    <!--MaxValue-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="ConstructSuccessChance"]/maxValue</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="ConstructSuccessChance"]/maxValue</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
-                    <!--SightMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="ConstructSuccessChance"]/capacityFactors/li[2]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="ConstructSuccessChance"]/capacityFactors/li[2]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
+                <Operation Class="XmlExtensions.OptionalPatchExternal">
+                    <ModSettingsClass>Grimm_UnLimited.ULSettings</ModSettingsClass>
+                    <field>ConstructSuccessChance_Max</field>
+                    <caseTrue>
+                        <!--MaxValue-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="ConstructSuccessChance"]/maxValue</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="ConstructSuccessChance"]/maxValue</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                    </caseTrue>
+                </Operation>
+                <Operation Class="XmlExtensions.OptionalPatchExternal">
+                    <ModSettingsClass>Grimm_UnLimited.ULSettings</ModSettingsClass>
+                    <field>ConstructSuccessChance_Caps</field>
+                    <caseTrue>
+                        <!--SightMax-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="ConstructSuccessChance"]/capacityFactors/li[2]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="ConstructSuccessChance"]/capacityFactors/li[2]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                    </caseTrue>
+                </Operation>
                 <!--FixBrokenDownBuildingSuccessChance-->
-                    <!--MaxValue-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="FixBrokenDownBuildingSuccessChance"]/maxValue</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="FixBrokenDownBuildingSuccessChance"]/maxValue</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
-                    <!--SightMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="FixBrokenDownBuildingSuccessChance"]/capacityFactors/li[2]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="FixBrokenDownBuildingSuccessChance"]/capacityFactors/li[2]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
+                <Operation Class="XmlExtensions.OptionalPatchExternal">
+                    <ModSettingsClass>Grimm_UnLimited.ULSettings</ModSettingsClass>
+                    <field>FixSuccessChance_Max</field>
+                    <caseTrue>
+                        <!--MaxValue-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="FixBrokenDownBuildingSuccessChance"]/maxValue</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="FixBrokenDownBuildingSuccessChance"]/maxValue</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                    </caseTrue>
+                </Operation>
+                <Operation Class="XmlExtensions.OptionalPatchExternal">
+                    <ModSettingsClass>Grimm_UnLimited.ULSettings</ModSettingsClass>
+                    <field>FixSuccessChance_Caps</field>
+                    <caseTrue>
+                        <!--SightMax-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="FixBrokenDownBuildingSuccessChance"]/capacityFactors/li[2]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="FixBrokenDownBuildingSuccessChance"]/capacityFactors/li[2]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                    </caseTrue>
+                </Operation>
             <!--StatsPawnsWorkMedical-->
                 <!--MedicalTendSpeed-->
-                    <!--SightMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="MedicalTendSpeed"]/capacityFactors/li[1]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="MedicalTendSpeed"]/capacityFactors/li[1]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
+                <Operation Class="XmlExtensions.OptionalPatchExternal">
+                    <ModSettingsClass>Grimm_UnLimited.ULSettings</ModSettingsClass>
+                    <field>TendSpeed_Caps</field>
+                    <caseTrue>
+                        <!--SightMax-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="MedicalTendSpeed"]/capacityFactors/li[1]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="MedicalTendSpeed"]/capacityFactors/li[1]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                    </caseTrue>
+                </Operation>
                 <!--MedicalTendQuality-->
-                    <!--SightMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="MedicalTendQuality"]/capacityFactors/li[1]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="MedicalTendQuality"]/capacityFactors/li[1]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
-                    <!--ManipulationMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="MedicalTendQuality"]/capacityFactors/li[2]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="MedicalTendQuality"]/capacityFactors/li[2]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
+                <Operation Class="XmlExtensions.OptionalPatchExternal">
+                    <ModSettingsClass>Grimm_UnLimited.ULSettings</ModSettingsClass>
+                    <field>TendQuality_Caps</field>
+                    <caseTrue>
+                        <!--SightMax-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="MedicalTendQuality"]/capacityFactors/li[1]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="MedicalTendQuality"]/capacityFactors/li[1]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                        <!--ManipulationMax-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="MedicalTendQuality"]/capacityFactors/li[2]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="MedicalTendQuality"]/capacityFactors/li[2]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                    </caseTrue>
+                </Operation>
                 <!--MedicalOperationSpeed-->
-                    <!--SightMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="MedicalOperationSpeed"]/capacityFactors/li[1]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="MedicalOperationSpeed"]/capacityFactors/li[1]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
+                <Operation Class="XmlExtensions.OptionalPatchExternal">
+                    <ModSettingsClass>Grimm_UnLimited.ULSettings</ModSettingsClass>
+                    <field>OperationSpeed_Caps</field>
+                    <caseTrue>
+                        <!--SightMax-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="MedicalOperationSpeed"]/capacityFactors/li[1]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="MedicalOperationSpeed"]/capacityFactors/li[1]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                    </caseTrue>
+                </Operation>
                 <!--MedicalSurgerySuccessChance-->
-                    <!--SightMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="MedicalSurgerySuccessChance"]/capacityFactors/li[1]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="MedicalSurgerySuccessChance"]/capacityFactors/li[1]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
+                <Operation Class="XmlExtensions.OptionalPatchExternal">
+                    <ModSettingsClass>Grimm_UnLimited.ULSettings</ModSettingsClass>
+                    <field>SurgerySuccessChance_Caps</field>
+                    <caseTrue>
+                        <!--SightMax-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="MedicalSurgerySuccessChance"]/capacityFactors/li[1]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="MedicalSurgerySuccessChance"]/capacityFactors/li[1]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                    </caseTrue>
+                </Operation>
             <!--StatsPawnsWorkRecipes-->
                 <!--SmeltingSpeed-->
-                    <!--SightMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="SmeltingSpeed"]/capacityFactors/li[1]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="SmeltingSpeed"]/capacityFactors/li[1]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
+                <Operation Class="XmlExtensions.OptionalPatchExternal">
+                    <ModSettingsClass>Grimm_UnLimited.ULSettings</ModSettingsClass>
+                    <field>SmeltingSpeed_Caps</field>
+                    <caseTrue>
+                        <!--SightMax-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="SmeltingSpeed"]/capacityFactors/li[1]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="SmeltingSpeed"]/capacityFactors/li[1]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                    </caseTrue>
+                </Operation>
                 <!--GeneralLaborSpeed-->
-                    <!--SightMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="GeneralLaborSpeed"]/capacityFactors/li[2]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="GeneralLaborSpeed"]/capacityFactors/li[2]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
+                <Operation Class="XmlExtensions.OptionalPatchExternal">
+                    <ModSettingsClass>Grimm_UnLimited.ULSettings</ModSettingsClass>
+                    <field>GeneralLaborSpeed_Caps</field>
+                    <caseTrue>
+                        <!--SightMax-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="GeneralLaborSpeed"]/capacityFactors/li[2]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="GeneralLaborSpeed"]/capacityFactors/li[2]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                    </caseTrue>
+                </Operation>
                 <!--DrugSynthesisSpeed-->
-                    <!--SightMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="DrugSynthesisSpeed"]/capacityFactors/li[1]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="DrugSynthesisSpeed"]/capacityFactors/li[1]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
+                <Operation Class="XmlExtensions.OptionalPatchExternal">
+                    <ModSettingsClass>Grimm_UnLimited.ULSettings</ModSettingsClass>
+                    <field>DrugSynthesisSpeed_Caps</field>
+                    <caseTrue>
+                        <!--SightMax-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="DrugSynthesisSpeed"]/capacityFactors/li[1]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="DrugSynthesisSpeed"]/capacityFactors/li[1]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                    </caseTrue>
+                </Operation>
                 <!--CookSpeed-->
-                    <!--SightMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="CookSpeed"]/capacityOffsets/li[1]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="CookSpeed"]/capacityOffsets/li[1]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
-                    <!--ManipulationMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="CookSpeed"]/capacityOffsets/li[2]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="CookSpeed"]/capacityOffsets/li[2]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
+                <Operation Class="XmlExtensions.OptionalPatchExternal">
+                    <ModSettingsClass>Grimm_UnLimited.ULSettings</ModSettingsClass>
+                    <field>CookSpeed_Caps</field>
+                    <caseTrue>
+                        <!--SightMax-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="CookSpeed"]/capacityOffsets/li[1]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="CookSpeed"]/capacityOffsets/li[1]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                        <!--ManipulationMax-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="CookSpeed"]/capacityOffsets/li[2]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="CookSpeed"]/capacityOffsets/li[2]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                    </caseTrue>
+                </Operation>
                 <!--DrugCookingSpeed-->
-                    <!--SightMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="DrugCookingSpeed"]/capacityFactors/li[1]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="DrugCookingSpeed"]/capacityFactors/li[1]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
+                <Operation Class="XmlExtensions.OptionalPatchExternal">
+                    <ModSettingsClass>Grimm_UnLimited.ULSettings</ModSettingsClass>
+                    <field>DrugCookingSpeed_Caps</field>
+                    <caseTrue>
+                        <!--SightMax-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="DrugCookingSpeed"]/capacityFactors/li[1]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="DrugCookingSpeed"]/capacityFactors/li[1]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                    </caseTrue>
+                </Operation>
                 <!--ButcherySpeedBase-->
-                    <!--SightMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[@Name="ButcherySpeedBase"]/capacityFactors/li[1]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[@Name="ButcherySpeedBase"]/capacityFactors/li[1]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
+                <Operation Class="XmlExtensions.OptionalPatchExternal">
+                    <ModSettingsClass>Grimm_UnLimited.ULSettings</ModSettingsClass>
+                    <field>ButcherySpeed_Caps</field>
+                    <caseTrue>
+                        <!--SightMax-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[@Name="ButcherySpeedBase"]/capacityFactors/li[1]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[@Name="ButcherySpeedBase"]/capacityFactors/li[1]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                    </caseTrue>
+                </Operation>
                 <!--ButcheryEfficiencyBase-->
-                    <!--SightMax-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[@Name="ButcheryEfficiencyBase"]/capacityFactors/li[1]/max</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[@Name="ButcheryEfficiencyBase"]/capacityFactors/li[1]/max</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
+                <Operation Class="XmlExtensions.OptionalPatchExternal">
+                    <ModSettingsClass>Grimm_UnLimited.ULSettings</ModSettingsClass>
+                    <field>ButcheryEfficiency_Caps</field>
+                    <caseTrue>
+                        <!--SightMax-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[@Name="ButcheryEfficiencyBase"]/capacityFactors/li[1]/max</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[@Name="ButcheryEfficiencyBase"]/capacityFactors/li[1]/max</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                    </caseTrue>
+                </Operation>
                 <!--ButcheryFleshEfficiency-->
-                    <!--MaxValue-->
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="ButcheryFleshEfficiency"]/maxValue</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="ButcheryFleshEfficiency"]/maxValue</xpath>
-                            </li>
-                        </operations>
-                    </Operation>
+                <Operation Class="XmlExtensions.OptionalPatchExternal">
+                    <ModSettingsClass>Grimm_UnLimited.ULSettings</ModSettingsClass>
+                    <field>ButcheryEfficiencyFlesh_Max</field>
+                    <caseTrue>
+                        <!--MaxValue-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="ButcheryFleshEfficiency"]/maxValue</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="ButcheryFleshEfficiency"]/maxValue</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                    </caseTrue>
+                </Operation>
                 <!--ButcheryMechanoidEfficiency-->
-                    <!--MaxValue>
-                    <Operation Class="PatchOperationSequence">
-                        <success>Always</success>
-                        <operations>
-                            <li Class="PatchOperationTest">
-                                <xpath>Defs/StatDef[defName="ButcheryMechanoidEfficiency"]/maxValue</xpath>
-                                <success>Normal</success>
-                            </li>
-                            <li Class="PatchOperationRemove">
-                                <xpath>Defs/StatDef[defName="ButcheryMechanoidEfficiency"]/maxValue</xpath>
-                            </li>
-                        </operations>
-                    </Operation-->
+                <Operation Class="XmlExtensions.OptionalPatchExternal">
+                    <ModSettingsClass>Grimm_UnLimited.ULSettings</ModSettingsClass>
+                    <field>ButcheryEfficiencyMechanoid_Max</field>
+                    <caseTrue>
+                        <!--MaxValue-->
+                        <Operation Class="PatchOperationSequence">
+                            <success>Always</success>
+                            <operations>
+                                <li Class="PatchOperationTest">
+                                    <xpath>Defs/StatDef[defName="ButcheryMechanoidEfficiency"]/maxValue</xpath>
+                                    <success>Normal</success>
+                                </li>
+                                <li Class="PatchOperationRemove">
+                                    <xpath>Defs/StatDef[defName="ButcheryMechanoidEfficiency"]/maxValue</xpath>
+                                </li>
+                            </operations>
+                        </Operation>
+                    </caseTrue>
+                </Operation>
 </Patch>
