@@ -5,3 +5,4 @@ C:\Users\roper\Documents\GitHub\Un-Limited\Un-Limited\1.3\Source\Un-Limited\obj\
 C:\Users\roper\Documents\GitHub\Un-Limited\Un-Limited\1.3\Source\Un-Limited\obj\Debug\Un-Limited.dll
 C:\Users\roper\Documents\GitHub\Un-Limited\Un-Limited\1.3\Assemblies\Un-Limited.dll
 C:\Users\roper\Documents\GitHub\Un-Limited\Un-Limited\1.3\Source\Un-Limited\obj\Debug\Un-Limited.csproj.CopyComplete
+C:\Users\roper\Documents\GitHub\Un-Limited\Un-Limited\1.3\Source\Un-Limited\obj\Debug\Un-Limited.csproj.AssemblyReference.cache
