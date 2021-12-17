@@ -6,6 +6,8 @@ However, in vanilla, manipulation can only have so much of an effect, so the eff
 Also some stats have a maximum that can be reached, for instance mining yield can only reach 100%, this mod removes these sorts of limitations as well so that your bionically enhanced colonists can truly transcend the limitations of flesh.
 The steam workshop page is located here: https://steamcommunity.com/sharedfiles/filedetails/?id=1668141382
 
+There is a mod menu that allows you to select which stats have Capacity limits or Maximum Values Un-limited.
+
 For Rimworld 1.3 this mod requires XML Extensions, located here https://steamcommunity.com/sharedfiles/filedetails/?id=2574315206, to run.
 For Rimworld 1.0 this mod requires Mod Check, located here https://steamcommunity.com/sharedfiles/filedetails/?id=154470597, to run
 
