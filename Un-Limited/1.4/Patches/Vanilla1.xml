@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+        <!--ArmorRatingBase MaxValue-->
+            <Operation Class="XmlExtensions.ApplyPatch">
+                <patchName>MaxValueRemove</patchName>
+                <arguments>
+                    <li>true</li>
+                    <li>ArmorRatingBase</li>
+                    <li>@Name</li>
+                </arguments>
+            </Operation>
+        <!--MeleeHitChance CapacityOffsets-->
+            <Operation Class="XmlExtensions.ApplyPatch">
+                <patchName>CapacityMaxRemove</patchName>
+                <arguments>
+                    <li>true</li>
+                    <li>MeleeHitChance</li>
+                    <li>defName</li>
+                    <li>capacityOffsets</li>
+                </arguments>
+            </Operation>
+        <!--MeleeDodgeChance CapacityOffsets-->
+            <Operation Class="XmlExtensions.ApplyPatch">
+                <patchName>CapacityMaxRemove</patchName>
+                <arguments>
+                    <li>true</li>
+                    <li>MeleeDodgeChance</li>
+                    <li>defName</li>
+                    <li>capacityOffsets</li>
+                </arguments>
+            </Operation>
+        <!--ShootingAccuracyPawn CapacityOffsets-->
+            <Operation Class="XmlExtensions.ApplyPatch">
+                <patchName>CapacityMaxRemove</patchName>
+                <arguments>
+                    <li>true</li>
+                    <li>ShootingAccuracyPawn</li>
+                    <li>defName</li>
+                    <li>capacityOffsets</li>
+                </arguments>
+            </Operation>
+        <!--MortarMissRadiusFactor CapacityOffsets-->
+            <Operation Class="XmlExtensions.ApplyPatch">
+                <patchName>CapacityMaxRemove</patchName>
+                <arguments>
+                    <li>true</li>
+                    <li>MortarMissRadiusFactor</li>
+                    <li>defName</li>
+                    <li>capacityOffsets</li>
+                </arguments>
+            </Operation>
+        <!--ForagedNutritionPerDay CapacityFactors-->
+            <Operation Class="XmlExtensions.ApplyPatch">
+                <patchName>CapacityMaxRemove</patchName>
+                <arguments>
+                    <li>true</li>
+                    <li>ForagedNutritionPerDay</li>
+                    <li>defName</li>
+                    <li>capacityFactors</li>
+                </arguments>
+            </Operation>
+        <!--NegotiationAbility CapacityFactors-->
+            <Operation Class="XmlExtensions.ApplyPatch">
+                <patchName>CapacityMaxRemove</patchName>
+                <arguments>
+                    <li>true</li>
+                    <li>NegotiationAbility</li>
+                    <li>defName</li>
+                    <li>capacityFactors</li>
+                </arguments>
+            </Operation>
+        <!--ArrestSuccessChance CapacityFactors-->
+            <Operation Class="XmlExtensions.ApplyPatch">
+                <patchName>CapacityMaxRemove</patchName>
+                <arguments>
+                    <li>true</li>
+                    <li>ArrestSuccessChance</li>
+                    <li>defName</li>
+                    <li>capacityFactors</li>
+                </arguments>
+            </Operation>
+        <!--SocialImpact CapacityFactors-->
+            <Operation Class="XmlExtensions.ApplyPatch">
+                <patchName>CapacityMaxRemove</patchName>
+                <arguments>
+                    <li>true</li>
+                    <li>SocialImpact</li>
+                    <li>defName</li>
+                    <li>capacityFactors</li>
+                </arguments>
+            </Operation>
+        <!--TameAnimalChance CapacityFactors-->
+            <Operation Class="XmlExtensions.ApplyPatch">
+                <patchName>CapacityMaxRemove</patchName>
+                <arguments>
+                    <li>true</li>
+                    <li>TameAnimalChance</li>
+                    <li>defName</li>
+                    <li>capacityFactors</li>
+                </arguments>
+            </Operation>
+        <!--TrainAnimalChance CapacityFactors-->
+            <Operation Class="XmlExtensions.ApplyPatch">
+                <patchName>CapacityMaxRemove</patchName>
+                <arguments>
+                    <li>true</li>
+                    <li>TrainAnimalChance</li>
+                    <li>defName</li>
+                    <li>capacityFactors</li>
+                </arguments>
+            </Operation>
+        <!--MiningSpeed CapacityFactors-->
+            <Operation Class="XmlExtensions.ApplyPatch">
+                <patchName>CapacityMaxRemove</patchName>
+                <arguments>
+                    <li>true</li>
+                    <li>MiningSpeed</li>
+                    <li>defName</li>
+                    <li>capacityFactors</li>
+                </arguments>
+            </Operation>
+        <!--DeepDrillingSpeed CapacityFactors-->
+            <Operation Class="XmlExtensions.ApplyPatch">
+                <patchName>CapacityMaxRemove</patchName>
+                <arguments>
+                    <li>true</li>
+                    <li>DeepDrillingSpeed</li>
+                    <li>defName</li>
+                    <li>capacityFactors</li>
+                </arguments>
+            </Operation>
+        <!--MiningYield CapacityFactors MaxValue-->
+            <Operation Class="XmlExtensions.ApplyPatch">
+                <patchName>CapacityMaxRemove</patchName>
+                <arguments>
+                    <li>true</li>
+                    <li>MiningYield</li>
+                    <li>defName</li>
+                    <li>capacityFactors</li>
+                </arguments>
+            </Operation>
+            <Operation Class="XmlExtensions.ApplyPatch">
+                <patchName>MaxValueRemove</patchName>
+                <arguments>
+                    <li>false</li>
+                    <li>MiningYield</li>
+                    <li>defName</li>
+                </arguments>
+            </Operation>
+        <!--SmoothingSpeed CapacityFactors-->
+            <Operation Class="XmlExtensions.ApplyPatch">
+                <patchName>CapacityMaxRemove</patchName>
+                <arguments>
+                    <li>true</li>
+                    <li>SmoothingSpeed</li>
+                    <li>defName</li>
+                    <li>capacityFactors</li>
+                </arguments>
+            </Operation>
+        <!--ResearchSpeed CapacityFactors-->
+            <Operation Class="XmlExtensions.ApplyPatch">
+                <patchName>CapacityMaxRemove</patchName>
+                <arguments>
+                    <li>true</li>
+                    <li>ResearchSpeed</li>
+                    <li>defName</li>
+                    <li>capacityFactors</li>
+                </arguments>
+            </Operation>
+        <!--AnimalGatherSpeed CapacityFactors-->
+            <Operation Class="XmlExtensions.ApplyPatch">
+                <patchName>CapacityMaxRemove</patchName>
+                <arguments>
+                    <li>true</li>
+                    <li>AnimalGatherSpeed</li>
+                    <li>defName</li>
+                    <li>capacityFactors</li>
+                </arguments>
+            </Operation>
+        <!--AnimalGatherYield CapacityFactors MaxValue-->
+            <Operation Class="XmlExtensions.ApplyPatch">
+                <patchName>CapacityMaxRemove</patchName>
+                <arguments>
+                    <li>true</li>
+                    <li>AnimalGatherYield</li>
+                    <li>defName</li>
+                    <li>capacityFactors</li>
+                </arguments>
+            </Operation>
+            <Operation Class="XmlExtensions.ApplyPatch">
+                <patchName>MaxValueRemove</patchName>
+                <arguments>
+                    <li>false</li>
+                    <li>AnimalGatherYield</li>
+                    <li>defName</li>
+                </arguments>
+            </Operation>
+        <!--PlantWorkSpeed CapacityFactors-->
+            <Operation Class="XmlExtensions.ApplyPatch">
+                <patchName>CapacityMaxRemove</patchName>
+                <arguments>
+                    <li>true</li>
+                    <li>PlantWorkSpeed</li>
+                    <li>defName</li>
+                    <li>capacityFactors</li>
+                </arguments>
+            </Operation>
+        <!--PlantHarvestYield CapacityFactors MaxValue-->
+            <Operation Class="XmlExtensions.ApplyPatch">
+                <patchName>CapacityMaxRemove</patchName>
+                <arguments>
+                    <li>true</li>
+                    <li>PlantHarvestYield</li>
+                    <li>defName</li>
+                    <li>capacityFactors</li>
+                </arguments>
+            </Operation>
+            <Operation Class="XmlExtensions.ApplyPatch">
+                <patchName>MaxValueRemove</patchName>
+                <arguments>
+                    <li>true</li>
+                    <li>PlantHarvestYield</li>
+                    <li>defName</li>
+                </arguments>
+            </Operation>
+        <!--DrugHarvestYield MaxValue-->
+            <Operation Class="XmlExtensions.ApplyPatch">
+                <patchName>MaxValueRemove</patchName>
+                <arguments>
+                    <li>true</li>
+                    <li>DrugHarvestYield</li>
+                    <li>defName</li>
+                </arguments>
+            </Operation>
+        <!--ConstructionSpeed CapacityFactors-->
+            <Operation Class="XmlExtensions.ApplyPatch">
+                <patchName>CapacityMaxRemove</patchName>
+                <arguments>
+                    <li>true</li>
+                    <li>ConstructionSpeed</li>
+                    <li>defName</li>
+                    <li>capacityFactors</li>
+                </arguments>
+            </Operation>
+        <!--ConstructSuccessChance CapacityFactors MaxValue-->
+            <Operation Class="XmlExtensions.ApplyPatch">
+                <patchName>CapacityMaxRemove</patchName>
+                <arguments>
+                    <li>true</li>
+                    <li>ConstructSuccessChance</li>
+                    <li>defName</li>
+                    <li>capacityFactors</li>
+                </arguments>
+            </Operation>
+            <Operation Class="XmlExtensions.ApplyPatch">
+                <patchName>MaxValueRemove</patchName>
+                <arguments>
+                    <li>true</li>
+                    <li>ConstructSuccessChance</li>
+                    <li>defName</li>
+                </arguments>
+            </Operation>
+        <!--FixBrokenDownBuildingSuccessChance CapacityFactors MaxValue-->
+            <Operation Class="XmlExtensions.ApplyPatch">
+                <patchName>CapacityMaxRemove</patchName>
+                <arguments>
+                    <li>true</li>
+                    <li>FixBrokenDownBuildingSuccessChance</li>
+                    <li>defName</li>
+                    <li>capacityFactors</li>
+                </arguments>
+            </Operation>
+            <Operation Class="XmlExtensions.ApplyPatch">
+                <patchName>MaxValueRemove</patchName>
+                <arguments>
+                    <li>true</li>
+                    <li>FixBrokenDownBuildingSuccessChance</li>
+                    <li>defName</li>
+                </arguments>
+            </Operation>
+        <!--MedicalTendSpeed CapacityFactors-->
+            <Operation Class="XmlExtensions.ApplyPatch">
+                <patchName>CapacityMaxRemove</patchName>
+                <arguments>
+                    <li>true</li>
+                    <li>MedicalTendSpeed</li>
+                    <li>defName</li>
+                    <li>capacityFactors</li>
+                </arguments>
+            </Operation>
+        <!--MedicalTendQuality CapacityFactors-->
+            <Operation Class="XmlExtensions.ApplyPatch">
+                <patchName>CapacityMaxRemove</patchName>
+                <arguments>
+                    <li>true</li>
+                    <li>MedicalTendQuality</li>
+                    <li>defName</li>
+                    <li>capacityFactors</li>
+                </arguments>
+            </Operation>
+        <!--MedicalOperationSpeed CapacityFactors-->
+            <Operation Class="XmlExtensions.ApplyPatch">
+                <patchName>CapacityMaxRemove</patchName>
+                <arguments>
+                    <li>true</li>
+                    <li>MedicalOperationSpeed</li>
+                    <li>defName</li>
+                    <li>capacityFactors</li>
+                </arguments>
+            </Operation>
+        <!--MedicalSurgerySuccessChance CapacityFactors-->
+            <Operation Class="XmlExtensions.ApplyPatch">
+                <patchName>CapacityMaxRemove</patchName>
+                <arguments>
+                    <li>true</li>
+                    <li>MedicalSurgerySuccessChance</li>
+                    <li>defName</li>
+                    <li>capacityFactors</li>
+                </arguments>
+            </Operation>
+        <!--SmeltingSpeed CapacityFactors-->
+            <Operation Class="XmlExtensions.ApplyPatch">
+                <patchName>CapacityMaxRemove</patchName>
+                <arguments>
+                    <li>true</li>
+                    <li>SmeltingSpeed</li>
+                    <li>defName</li>
+                    <li>capacityFactors</li>
+                </arguments>
+            </Operation>
+        <!--GeneralLaborSpeed CapacityFactors-->
+            <Operation Class="XmlExtensions.ApplyPatch">
+                <patchName>CapacityMaxRemove</patchName>
+                <arguments>
+                    <li>true</li>
+                    <li>GeneralLaborSpeed</li>
+                    <li>defName</li>
+                    <li>capacityFactors</li>
+                </arguments>
+            </Operation>
+            <!--DrugSynthesisSpeed CapacityFactors-->
+                <Operation Class="XmlExtensions.ApplyPatch">
+                    <patchName>CapacityMaxRemove</patchName>
+                    <arguments>
+                        <li>true</li>
+                        <li>DrugSynthesisSpeed</li>
+                        <li>defName</li>
+                        <li>capacityFactors</li>
+                    </arguments>
+                </Operation>
+            <!--CookSpeed CapacityOffsets-->
+                <Operation Class="XmlExtensions.ApplyPatch">
+                    <patchName>CapacityMaxRemove</patchName>
+                    <arguments>
+                        <li>true</li>
+                        <li>CookSpeed</li>
+                        <li>defName</li>
+                        <li>capacityOffsets</li>
+                    </arguments>
+                </Operation>
+            <!--DrugCookingSpeed CapacityFactors-->
+                <Operation Class="XmlExtensions.ApplyPatch">
+                    <patchName>CapacityMaxRemove</patchName>
+                    <arguments>
+                        <li>true</li>
+                        <li>DrugCookingSpeed</li>
+                        <li>defName</li>
+                        <li>capacityFactors</li>
+                    </arguments>
+                </Operation>
+            <!--ButcherySpeedBase CapacityFactors-->
+                <Operation Class="XmlExtensions.ApplyPatch">
+                    <patchName>CapacityMaxRemove</patchName>
+                    <arguments>
+                        <li>true</li>
+                        <li>ButcherySpeedBase</li>
+                        <li>@Name</li>
+                        <li>capacityFactors</li>
+                    </arguments>
+                </Operation>
+        <!--ButcheryEfficiencyBase CapacityFactors-->
+            <Operation Class="XmlExtensions.ApplyPatch">
+                <patchName>CapacityMaxRemove</patchName>
+                <arguments>
+                    <li>true</li>
+                    <li>ButcheryEfficiencyBase</li>
+                    <li>@Name</li>
+                    <li>capacityFactors</li>
+                </arguments>
+            </Operation>
+        <!--ButcheryFleshEfficiency MaxValue-->
+            <Operation Class="XmlExtensions.ApplyPatch">
+                <patchName>MaxValueRemove</patchName>
+                <arguments>
+                    <li>false</li>
+                    <li>ButcheryFleshEfficiency</li>
+                    <li>defName</li>
+                </arguments>
+            </Operation>
+        <!--ButcheryMechanoidEfficiency MaxValue-->
+            <Operation Class="XmlExtensions.ApplyPatch">
+                <patchName>MaxValueRemove</patchName>
+                <arguments>
+                    <li>false</li>
+                    <li>ButcheryMechanoidEfficiency</li>
+                    <li>defName</li>
+                </arguments>
+            </Operation>
+</Patch>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="XmlExtensions.FindMod">
+        <mods>
+            <li>Ideology</li>
+        </mods>
+        <caseTrue>
+            <!--ConversionPower CapacityFactors-->
+                <Operation Class="XmlExtensions.ApplyPatch">
+                    <patchName>CapacityMaxRemove</patchName>
+                    <arguments>
+                        <li>true</li>
+                        <li>ConversionPower</li>
+                        <li>defName</li>
+                        <li>capacityFactors</li>
+                    </arguments>
+                </Operation>
+            <!--HackingSpeed CapacityFactors-->
+                <Operation Class="XmlExtensions.ApplyPatch">
+                    <patchName>CapacityMaxRemove</patchName>
+                    <arguments>
+                        <li>true</li>
+                        <li>HackingSpeed</li>
+                        <li>defName</li>
+                        <li>capacityFactors</li>
+                    </arguments>
+                </Operation>
+        </caseTrue>
+    </Operation>
+</Patch>
