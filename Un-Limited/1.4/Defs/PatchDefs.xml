@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    
+    <XmlExtensions.PatchDef Name="MaxValueRemove" Abstract = "True">
+        <parameters>
+            <li>defaultState</li>
+            <li>defName</li>
+            <li>type</li>
+        </parameters>
+        <apply>
+            <Operation Class="PatchOperationInsert">
+                <xpath>Defs/XmlExtensions.SettingsMenuDef[modId="Grimm.Unlimited"]/settings/li[@Class="XmlExtensions.Setting.ResetSettings"]</xpath>
+                <order>Prepend</order>
+                <value>
+                    <li Class="XmlExtensions.Setting.Checkbox">
+                        <key>{defName}_Max</key>
+                        <label>{defName} - Max Value</label>
+                        <defaultValue>{defaultState}</defaultValue>
+                    </li>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.OptionalPatch">
+                <modId>Grimm.Unlimited</modId>
+                <key>{defName}</key>
+                <defaultValue>{defaultState}</defaultValue>
+                <caseTrue>
+                    <Operation Class="XmlExtensions.PatchOperationSafeRemove">
+                        <xpath>Defs/StatDef[{type} = "{defName}"]/maxValue</xpath>
+                    </Operation>
+                </caseTrue>
+            </Operation>
+        </apply>
+    </XmlExtensions.PatchDef>
+
+    <XmlExtensions.PatchDef Name="CapacityMaxRemove" Abstract = "True">
+        <parameters>
+            <li>defaultState</li>
+            <li>defName</li>
+            <li>type</li>
+            <li>capType</li>
+        </parameters>
+        <apply>
+            <Operation Class="PatchOperationInsert">
+                <xpath>Defs/XmlExtensions.SettingsMenuDef[modId="Grimm.Unlimited"]/settings/li[@Class="XmlExtensions.Setting.ResetSettings"]</xpath>
+                <order>Prepend</order>
+                <value>
+                    <li Class="XmlExtensions.Setting.Checkbox">
+                        <key>{defName}_Caps</key>
+                        <label>{defName} - Capacity Value</label>
+                        <defaultValue>{defaultState}</defaultValue>
+                    </li>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.OptionalPatch">
+                <modId>Grimm.Unlimited</modId>
+                <key>{defName}</key>
+                <defaultValue>{defaultState}</defaultValue>
+                <caseTrue>
+                    <Operation Class="XmlExtensions.ForEach">
+                        <xpath>Defs/StatDef[{type} = "{defName}"]/{capType}/li[max]</xpath>
+                        <storeIn>path</storeIn>
+                        <prefixLength>4</prefixLength>
+                        <apply>
+                            <Operation Class="XmlExtensions.PatchOperationSafeRemove">
+                                <xpath>{path}/max</xpath>
+                            </Operation>
+                        </apply>
+                    </Operation>
+                </caseTrue>
+            </Operation>
+        </apply>
+    </XmlExtensions.PatchDef>
+
+</Defs>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <XmlExtensions.SettingsMenuDef>
+        <defName>Unlimited</defName>
+        <modId>Grimm.Unlimited</modId>
+        <label>Un-Limited</label>
+        <settings>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>Un-Limited</text>
+                <font>Medium</font>
+                <anchor>Middle</anchor>
+            </li>
+            <li Class="XmlExtensions.Setting.GapLine"/>
+            <li Class="XmlExtensions.Setting.ResetSettings"/>
+        </settings>
+    </XmlExtensions.SettingsMenuDef>
+
+</Defs>
