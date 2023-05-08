@@ -21,7 +21,7 @@
             </Operation>
             <Operation Class="XmlExtensions.OptionalPatch">
                 <modId>Grimm.Unlimited</modId>
-                <key>{defName}</key>
+                <key>{defName}_Max</key>
                 <defaultValue>{defaultState}</defaultValue>
                 <caseTrue>
                     <Operation Class="XmlExtensions.PatchOperationSafeRemove">
@@ -53,7 +53,7 @@
             </Operation>
             <Operation Class="XmlExtensions.OptionalPatch">
                 <modId>Grimm.Unlimited</modId>
-                <key>{defName}</key>
+                <key>{defName}_Caps</key>
                 <defaultValue>{defaultState}</defaultValue>
                 <caseTrue>
                     <Operation Class="XmlExtensions.ForEach">
